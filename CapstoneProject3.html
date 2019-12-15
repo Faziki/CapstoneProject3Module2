@@ -13153,46 +13153,6 @@ div#notebook {
 
 
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Can-we-predict-who-would've-survived-the-Titanic?">Can we predict who would've survived the Titanic?<a class="anchor-link" href="#Can-we-predict-who-would've-survived-the-Titanic?">&#182;</a></h1><h3 id="This-notebook-goes-through-a-basic-exploratory-data-analysis-of-the-Kaggle-Titanic-dataset-with-Python">This notebook goes through a basic exploratory data analysis of the Kaggle Titanic dataset with Python<a class="anchor-link" href="#This-notebook-goes-through-a-basic-exploratory-data-analysis-of-the-Kaggle-Titanic-dataset-with-Python">&#182;</a></h3><p>Although this notebook works towards creating a Kaggle submission, it should not be taken as exhaustive list of things to do with a dataset. It has been setup as an introduction to get you started with exploratory data analysis (EDA).</p>
-<p>There are challenges and extensions listed throughout. I encourage you to take the foundations here and build upon them.</p>
-<p>If you complete the challenges or get a better score than the one listed at the bottom of this notebook, <a href="www.twitter.com/mrdbourke">tweet me</a> and I'llgive your work a shout out.</p>
-<p>If you're interested, there's a video walkthrough of this notebook available on my YouTube: <a href="https://youtu.be/f1y9wDDxWnA">https://youtu.be/f1y9wDDxWnA</a></p>
-<p>Keep learning,</p>
-<p>Daniel</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Step-0:-Why-EDA?">Step 0: Why EDA?<a class="anchor-link" href="#Step-0:-Why-EDA?">&#182;</a></h2><p>Not all data comes in a neat little package ready to be modelled by the latest and greatest machine learning models.</p>
-<p>Most of the time, you'll get a dataset you don't know much about. So before you can make any solid predictions, you'll to find out more.</p>
-<p>This is where EDA comes in.</p>
-<p>The main thing to remember is the first word. Exploratory. You're trying to figure out more about the data so you can build a model the best way you can.</p>
-<p>You'll usually do this when you first look at a dataset but it'll continually happen as you learn more. EDA is an iterative process. There's no one way to do it either. It'll vary with each new dataset but there are some things you'll find yourself doing more often, we'll talk about those in this notebook and in a future blog post.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Step-1:-Download-the-data">Step 1: Download the data<a class="anchor-link" href="#Step-1:-Download-the-data">&#182;</a></h2><p>You can download the data for this notebook here: <a href="https://www.kaggle.com/c/titanic/data">https://www.kaggle.com/c/titanic/data</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Step-2:-Work-through-the-notebook">Step 2: Work through the notebook<a class="anchor-link" href="#Step-2:-Work-through-the-notebook">&#182;</a></h2><p>First we will import all the relevant dependencies we need.</p>
-<p>If you don't have any of these, the notebook will throw an error. The error will likely tell you what you don't have. Then you'll have to install it.</p>
-<p>You can usually figure out how to install it by Googling: "how to install [the thing you don't have]".</p>
-<p><strong>PS</strong> If you have any questions, feedback, advice or bug fixes, please let me know.</p>
-
-</div>
-</div>
-</div>
 
   
 
@@ -27494,23 +27454,6 @@ define('catboost_module', modules, function(widgets) {
 </div>
 
   </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Recall is low, this means there's a higher amount of false negatives (predicting Did not survive when it was actually Survived).</p>
-<p>Precision is higher therefore there's less false positives (predicting Survived, when it was actually Did not survive).</p>
-<p><strong>Challenge:</strong> What are some ways to visualise precision and recall? 
-<em>Hint:</em> You may want to look into what a confusion matrix is, you can find much more information in this blog post: <a href="https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c">Beyond Accuracy: Precision and Recall</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Submission">Submission<a class="anchor-link" href="#Submission">&#182;</a></h2><p>Let's use the model with the highest cross-validation accuracy score to make a prediction on the test dataset and then submit our predictions to Kaggle.</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We want to make predictions on the same kind of columnns our model is trained on.</p>
